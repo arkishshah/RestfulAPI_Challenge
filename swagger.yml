@@ -1,0 +1,42 @@
+TODO list collection.
+---
+tags:
+  - deserializer
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: body
+    in: body
+    description: request body
+    required: true
+    schema:
+      type: object
+      required:
+        - operation
+        - target
+        - user
+        - task
+      properties:
+        operation:
+          description: Which operation of CRUD to perform. eg = create/update/update/delete
+          type: string
+        target:
+          description: On whom operation has to perform. eg = users/task
+          type: string
+        user:
+          description: Take user's name OR "all" to read/delete all users
+          type: string
+        task:
+          description: Take user's task list OR "all" to read/delete all tasks
+          type: string
+responses:
+  200:
+    description: Returns the status of performed operations.
+    schema:
+      type: object
+      properties:
+        text:
+          description: Response text
+          type: string
