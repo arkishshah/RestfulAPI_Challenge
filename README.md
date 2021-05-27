@@ -1,6 +1,6 @@
 # TODO list collection application.
 
-Help User to store a TODO-list in their terminal. And content of the TODO-list persist on system reboot.
+Help User to store a TODO-list in their terminal and content of the TODO-list persist on system reboot.
 
 ## Features
 
