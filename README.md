@@ -17,7 +17,7 @@ Help User to store a TODO-list in their terminal and content of the TODO-list pe
 | swagger.yml     | Documentation on API endpoints and parameters            |
 | Makefile        | To create Virtual environment and setup all things       |
 | data.json       | Data storage file contains users and tasks               |
-| Requirement.txt | List of python libraries to required by this application |
+| requirements.txt | List of python libraries to required by this application |
 
 ### Instruction
 
